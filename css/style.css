@@ -1,0 +1,456 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-top: 2rem;
+  background-color: #f4f1eb;
+  font-family: "游明朝体", "Yu Mincho", serif;
+  background-image: url(../images/japanese-paper_00473.jpg);
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 1000px auto;
+  color: #333;
+}
+
+header,
+section {
+  text-align: center;
+  margin: auto;
+  padding: 5rem;
+  max-width: 950px;
+  font-size: 1rem;
+}
+
+.vertical-text1,
+.vertical-text2 {
+  writing-mode: vertical-rl;
+  text-align: start;
+  margin: 2rem auto;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+header {
+  background-image: url(../images/ChatGPT\ Image\ 2025年5月21日\ 00_25_33.png);
+  max-width: 1000px;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.vertical-text1 {
+  font-size: 2rem;
+  color: #f4f1eb;
+}
+
+/* フェードインアニメーション */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.when {
+  margin-bottom: 2rem;
+}
+
+.introduction1 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.introduction2 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.vertical-text2 {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.logo1 {
+  text-align: center;
+  text-decoration-line: underline;
+  font-size: 2rem;
+  color: rgb(150, 135, 50);
+  margin-bottom: 1rem;
+}
+
+.logo2 {
+  text-align: center;
+  text-decoration-line: underline;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-size: 5rem;
+  color: rgb(150, 135, 50);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: -15px;
+  margin-bottom: 10rem;
+}
+
+.line {
+  background-image: url(../images/sen.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.scene {
+  margin: 5rem auto;
+  margin-bottom: 3rem;
+  width: 1000px;
+  background-color: hsl(40, 29%, 94%, 0.9);
+  padding: 1rem;
+  border-right: 4px solid rgb(150, 135, 50);
+}
+
+.scene-1,
+.scene-3 {
+  margin-left: 12%;
+  margin-right: auto;
+}
+
+.scene-2 {
+  margin-left: auto;
+  margin-right: 12%;
+}
+
+.scene.reverse {
+  border-right: none;
+  border-left: 4px solid rgb(150, 135, 50);
+}
+
+.scene-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.scene.reverse .scene-content {
+  flex-direction: row-reverse;
+}
+
+.scene-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scene-image {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.scene-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-feature {
+  margin: 2rem auto;
+  font-size: 1rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列 */
+  gap: 1.5rem; /* 適度な余白 */
+  width:100%
+  margin: 2rem auto;
+  padding: 1rem;
+  justify-items: center; /* 画像を列内で中央に */
+}
+
+.items img {
+  width: 130%; /* 親要素（列幅）いっぱいに広げる */
+  max-width: 500px; /* 画像がでかくなりすぎるのを防ぐ上限 */
+  height: auto;
+  object-fit: contain;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.row {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.row-top {
+  grid-template-columns: repeat(2, 1fr); /* 上段は2列 */
+}
+
+.row-bottom {
+  grid-template-columns: repeat(3, 1fr); /* 下段は3列 */
+}
+
+.row img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+
+
+.set img{
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+.cta {
+  text-align: center;
+  margin-top: -100px;
+}
+
+.cta button {
+  background-color: #a68b6b;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+   font-family: "游明朝体", "Yu Mincho", serif;
+  border-radius: 5px;
+  margin-bottom: 100px;
+}
+
+.price {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+  max-width: 950px;
+  font-size: 1rem;
+}
+
+.company-logo {
+  text-align: center;
+  max-width: 20%;
+  margin-bottom: -40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form form p {
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 20%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #666;
+}
+
+.copy {
+  background-color: #a68b6b;
+  color: #f4f1eb;
+  margin-bottom: -100px;
+}
+
+/* スマホ用レスポンシブ */
+@media (max-width: 768px) {
+  body {
+    margin: 50px 0;
+    background-size: 100% auto;
+    font-size: 0.95rem;
+  }
+
+  h1.logo {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+    margin-top: -15px;
+  }
+
+  header,
+  section,
+  footer {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .vertical-text1,
+  .vertical-text2 {
+    font-size: 1.1rem;
+    margin: 1rem auto;
+  }
+
+  .when {
+    font-size: 1rem;
+    margin-top: 100px;
+  }
+
+  .scene {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .product-feature {
+    font-size: 0.95rem;
+  }
+
+  .cta button {
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .scene-content {
+    flex-direction: column;
+  }
+
+  .scene.reverse .scene-content {
+    flex-direction: column;
+  }
+
+  .scene-image {
+    max-width: 100%;
+  }
+}
+/* 1. .scene幅調整 */
+.scene {
+  max-width: 100%;
+  width: 95%;
+}
+
+/* 2. .items グリッド改善とセミコロン修正 */
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  justify-items: center;
+}
+
+/* 3. ヘッダー画像の高さ調整（必要に応じて） */
+header {
+  background-size: cover;
+  background-position: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* 4. 垂直テキストのレスポンシブ対応 */
+@media (max-width: 768px) {
+  .vertical-text1,
+  .vertical-text2 {
+    writing-mode: horizontal-tb;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .logo2 {
+    font-size: 3rem;
+  }
+
+  .scene-image {
+    max-width: 100%;
+  }
+
+  .items img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .row-top,
+  .row-bottom {
+    grid-template-columns: 1fr; /* レビュー画像も1列に */
+  }
+
+  .set img {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
